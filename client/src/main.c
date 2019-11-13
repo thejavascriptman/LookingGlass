@@ -1101,7 +1101,7 @@ int run()
     return 1;
   }
 
-  if (params.fullscreen || !params.minimizeOnFocusLoss)
+  if (params.fullscreen && !params.minimizeOnFocusLoss)
     SDL_SetHint(SDL_HINT_VIDEO_MINIMIZE_ON_FOCUS_LOSS, "0");
 
   if (!params.noScreensaver)
