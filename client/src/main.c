@@ -630,7 +630,10 @@ int eventFilter(void * userdata, SDL_Event * event)
           break;
 
         case SDL_WINDOWEVENT_FOCUS_LOST:
-          bypassCompositor(0);
+          if (params.enableCompositorOnFocusLoss)
+          {
+            bypassCompositor(0);
+          }
           break;
 
         case SDL_WINDOWEVENT_FOCUS_GAINED:

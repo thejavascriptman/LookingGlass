@@ -84,6 +84,7 @@ struct AppParams
   bool         fullscreen;
   bool         maximize;
   bool         minimizeOnFocusLoss;
+  bool         enableCompositorOnFocusLoss;
   bool         center;
   int          x, y;
   unsigned int w, h;
