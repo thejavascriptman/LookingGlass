@@ -54,6 +54,7 @@ struct AppState
   struct ll          * cbRequestList;
 
   SDL_Window         * window;
+  SDL_SysWMinfo        wminfo;
   int                  shmFD;
   struct KVMFRHeader * shm;
   unsigned int         shmSize;
